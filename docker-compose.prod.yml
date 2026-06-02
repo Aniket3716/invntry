@@ -1,0 +1,19 @@
+version: "3.9"
+
+# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
+
+services:
+  backend:
+    volumes: []
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --workers 4
+
+  frontend:
+    build:
+      target: production
+    volumes: []
+    command: ["nginx", "-g", "daemon off;"]
+    ports:
+      - "3000:80"
+
+  nginx:
+    profiles: []  # enable nginx in prod
