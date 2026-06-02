@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # INVNTRY — Inventory & Order Management System
 
 Full-stack app: **FastAPI** backend · **PostgreSQL** database · **React** frontend · **Docker Compose** orchestration.
@@ -205,3 +206,7 @@ Full interactive docs at `http://localhost:8000/docs` (Swagger UI).
 | GET | `/api/inventory/low-stock` | Items at/below threshold |
 | PUT | `/api/inventory/{product_id}` | Manually adjust stock |
 | GET | `/api/inventory/stats/dashboard` | Dashboard summary stats |
+=======
+# invntry
+This is an Inventory &amp; Order Management System built with FastAPI , SQLAlchemy , PostgreSQL , React and  Deployed using Docker and  Nginx
+>>>>>>> 102704070e7ef14ef5c473e91c31dc41eda7240c

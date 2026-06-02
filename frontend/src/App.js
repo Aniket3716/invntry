@@ -41,7 +41,7 @@ const NAV = [
 ];
 
 function Sidebar() {
-  const { pathname } = useLocation();
+  //const { pathname } = useLocation();
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
