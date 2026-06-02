@@ -147,7 +147,7 @@ export default function Orders() {
               </div>
 
               {form.items.map((item, i) => {
-                const prod = products.find(p => p.id === parseInt(item.product_id));
+                
                 return (
                   <div key={i} className="order-item-row">
                     <div className="form-group" style={{ margin: 0 }}>
